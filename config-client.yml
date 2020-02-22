@@ -1,0 +1,22 @@
+
+spring:
+  profiles:
+    active: dev
+    
+---
+spring:
+  profiles: dev
+  application:
+    name: config-client-8201
+
+server:
+  port: 8201
+---
+spring:
+  profiles: test
+  application:
+    name: config-client-8202
+
+server:
+  port: 8202
+
